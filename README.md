@@ -14,4 +14,4 @@ The pixel can be :
   * Black
   * etc...
 
-This page will be on a server then users can battle to create the biggest art on the page.
+_**This page will be on a server then users can battle to create the biggest art on the page.**_
