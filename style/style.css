@@ -1,4 +1,4 @@
-.registrationForm{
+.registrationForm, .connexionForm{
     background-color: red;
     width: 500px;
     height: auto;
