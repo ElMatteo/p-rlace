@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p/Rlace</title>
+
+    <!-- Add scripts -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="/js/rlace.js"></script>
+
+    <!-- Include css -->
+    <link rel="stylesheet" href="/css/rlace.css">
+</head>
+
+
+<body>
+    <div class="rlace">
+
+        <canvas id="rlace" height="500" width="500"></canvas>
+
+        <div class="controls">
+
+            <div>Choose coords, and the color you want</div>
+            <p>the rlace is 50x50 pixels</p>
+
+            X coord: <input type="number" min="0" max="50" id="x-coord">
+            <br>
+            Y coord: <input type="number" min="0" max="50" id="y-coord">
+            <br><br>
+            Color: <input type="color" id="color">
+            <br><br>
+            <button id="submit">Rlace Color</button>
+        </div>
+
+    </div>
+    
+  
+</body>
+
+
+</html>
