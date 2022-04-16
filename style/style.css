@@ -1,0 +1,17 @@
+.registrationForm, .connexionForm{
+    background-color: red;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.form {
+    text-align: center;
+    
+}
+
+input{
+    display:inline-block;
+}
