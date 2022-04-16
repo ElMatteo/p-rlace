@@ -15,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/ElMatteo/projectWeb/issues"
   },
-  
-  "homepage": "https://github.com/ElMatteo/projectWeb#readme"
+  "homepage": "https://github.com/ElMatteo/projectWeb#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "socket.io": "^4.4.1"
+  }
 }

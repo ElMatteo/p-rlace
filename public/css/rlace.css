@@ -1,0 +1,25 @@
+.rlace {
+    background-color: rgb(162, 159, 170);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+}
+
+canvas {
+    margin-left: 20%;
+    margin-top: 10%;
+    height: 500px;
+    width: 500px;
+    border: 1px solid black; 
+}
+
+p {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.controls {
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
