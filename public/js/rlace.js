@@ -42,5 +42,28 @@ $(document).ready(() => {
         })
     });
 
+    // Slider JS
+
+    var sliderx = document.getElementById("x-coord");
+    var outputx = document.getElementById("valueX");
+    // Display the default slider value
+    outputx.innerHTML = "X = "+sliderx.value; 
+
+    // Update the current slider value
+    sliderx.oninput = function() {
+      outputx.innerHTML = "X = "+sliderx.value;
+    }
+
+    var slidery = document.getElementById("y-coord");
+    var outputy = document.getElementById("valueY");
+    // Display the default slider value
+    outputy.innerHTML = "Y = "+slidery.value;
+
+    // Update the current slider value
+    slidery.oninput = function() {
+      outputy.innerHTML = "Y = "+slidery.value;
+    }
+
+
 
   })
