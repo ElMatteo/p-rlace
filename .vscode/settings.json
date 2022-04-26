@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/041a3645-e426-4af9-80f1-bd528901f1ab/resourceGroups/pRlaceQS-rg/providers/Microsoft.Web/sites/pRlace",
+    "appService.deploySubpath": "."
+}
