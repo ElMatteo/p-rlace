@@ -26,14 +26,14 @@
         header("index.php");
     }
     ?>
-    <form action="index.php" method="POST">
+    <form action="registration.php" method="POST">
     <div style='float: right;'>
     <input type="submit" name="disconnect" value="Disconnect" id="btnDisconnect"></input>
     </div>
     </form>
     <div class="registrationForm">
         <h1>THE NEW p/Rlace</h1>
-        <form action="index.php" method="POST" class="form">
+        <form action="registration.php" method="POST" class="form">
             <label for="nick">Enter your pseudo: </label>
             <input type="text" name="pseudo" id="nick" placeholder="Pseudo" required></input>
             <br><br>
@@ -76,7 +76,7 @@
                     } else {
                         $query = "insert into registration (pseudoUser, emailUser, passwordUser) values ('$pseudo','$email','$passwd')";
                         mysqli_query($con,$query);
-                        header("index.php");
+                        header("connexion.php");
                     }
                 }
             } else {
