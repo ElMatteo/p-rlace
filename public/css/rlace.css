@@ -1,0 +1,181 @@
+.rlace {
+    padding-top: 15px;
+    background-color: rgb(162, 159, 170);
+}
+
+canvas {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black; 
+}
+
+p {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.controls {
+    text-align: center;
+}
+
+.text {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* BUTTON STYLE */
+/* -------------------------------------------------- */
+.myButton {
+	box-shadow: 1px 2px 5px 0px #1c1b18;
+	background-color:#eae0c2;
+	border-radius:10px;
+	border:2px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:rgb(238, 121, 12);
+	font-family:Courier New;
+	font-size:17px;
+	font-weight:bold;
+	padding:12px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background-color:#ccc2a6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Header style */
+
+
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+}
+  
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+  
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+img.logo {
+    border-radius: 5px;
+    width: 100px;
+}
+
+.header a:hover {
+    background-color: rgba(238, 121, 12, 0.548);
+    color: black;
+}
+
+.header a.active {
+    background-color: rgb(238, 121, 12);
+    color: white;
+}
+
+.header-right {
+    float: right;
+}
+
+@media screen and (max-width: 500px) {
+    .header img {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-right {
+        float: none;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Sticky footer styles */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.footer, .push {
+    height: 0px;
+}
+
+.copyright {
+    font-weight: bold;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.bottom-footer {
+    padding-bottom: 15px;
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/* Slider styles */
+
+.slidecontainer {
+    /* width: 60%; */
+    text-align: center;
+}
+  
+  /* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 40%;
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+  
+  /* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    background: #ff9900; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+  
+
+/*-----------------------------------------------------------------------------------*/
