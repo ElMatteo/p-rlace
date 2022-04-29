@@ -3,10 +3,13 @@ const express = require('express'),
       server = require('http').createServer(app),
       io = require('socket.io')(server)
 
+require('dotenv').config();
+const exp = require('constants');
+const { auth } = require('express-openid-connect');
 const CANVAS_ROWS = 50
 const CANVAS_COLS = 50
-
-var canvas = [ ]
+var indexRouter = require("./app.js")
+var canvas = []
 
 for(var row = 0; row < CANVAS_ROWS; row++){
   canvas[row] = [ ]
@@ -15,8 +18,32 @@ for(var row = 0; row < CANVAS_ROWS; row++){
     canvas[row][col] = "#FFF"
   }
 }
-
+app.use(
+  auth({
+    authRequired: false,
+    issuerBaseURL: process.env.ISSUER_BASE_URL,
+    baseURL: process.env.BASE_URL,
+    clientID: process.env.CLIENT_ID,
+    secret: process.env.SECRET,
+    idpLogout: true,
+  })
+);
+app.set("views","public")
+app.set("view engine","ejs")
+app.use(express.json())
+app.use(express.urlencoded({ extended: true}))
 app.use(express.static("public"))
+app.use("/", indexRouter)
+
+app.get('/', (req, res) => {
+  res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out')
+  res.render("index", {title: "Express done"})
+})
+
+app.get('/profile', (req, res) => {
+  res.send(req.oidc.user)
+})
+
 
 io.on("connection", socket => {
     socket.emit("canvas", canvas)
