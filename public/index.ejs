@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p/Rlace</title>
+
+    <!-- Add scripts -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="/js/rlace.js"></script>
+
+    <!-- Include css -->
+    <link rel="stylesheet" href="/css/rlace.css">
+</head>
+
+
+<body>
+    <div class="header">
+        <img src="/img/rlace_logo1.png" alt="rlacelogo" class="logo">
+        <div class="header-right">
+          <a class="active" href="">Canva</a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>
+          <a href="https://www.reddit.com/r/place/">Inspiration</a>
+        <% if (authen){ %>
+            <a href="/logout">Log out</a>
+        <% } else { %>
+            <a href="/login">Register / Login</a>
+        <% } %>
+    </div>
+</div>
+<% if (authen){ %>
+    <div class="rlace">
+<% } else { %>
+    <div onclick="window.location.href='/login'" class="rlace">
+<% } %>
+
+        <div class="controls">
+            <canvas id="rlace" height="500" width="500"></canvas>
+
+            <div class="text">Choose coords, and the color you want</div>
+            <p>the rlace is 50x50 pixels</p>
+
+            <div id="valueX"></div>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="50" value="25" class="slider" id="x-coord">
+            </div>
+            
+            <br>
+
+            <div id="valueY"></div>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="50" value="25" class="slider" id="y-coord">
+            </div>
+
+            <br>
+
+            <div class="text">
+                Choose pixel's color: <input type="color" id="color">
+            </div> 
+
+            <br><br>
+
+            <button id="submit" class="myButton">Rlace Color ! </button>
+
+            <br><br><br><br><br><br>
+            
+        </div>
+        <div class="push"></div>
+    </div>
+
+    <footer class="footer">
+        <p class="copyright">Copyright &copy; p/Rlace</p>
+        <p>A project proposed by</p>
+        <p class="bottom-footer">Louis Arbey | Matteo Clabassi | Theo Martin</p>
+    </footer>
+</body>
+
+
+</html>
