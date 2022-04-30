@@ -19,6 +19,11 @@ The pixel can be :
 
 _**This page will be on a server then users can battle to create the biggest art on the page.**_
 
+## Installation requirements ##
+```bash
+npm run install
+```
+
 ## How to run ? ##
 ```bash
 npm run start
