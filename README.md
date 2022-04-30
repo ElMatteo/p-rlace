@@ -23,7 +23,10 @@ _**This page will be on a server then users can battle to create the biggest art
 ```bash
 npm run install
 ```
-
+_**or**_
+```bash
+npm install
+```
 ## How to run ? ##
 ```bash
 npm run start
