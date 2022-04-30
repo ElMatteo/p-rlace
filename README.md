@@ -1,7 +1,7 @@
 ## projectWeb
 # Project of advanced web programming for University of California, Irvine
 
-![alt text](https://github.com/ElMatteo/r-placeProject/blob/main/Logo%20p%20rlace.png?raw=true)
+![alt text](https://github.com/ElMatteo/r-placeProject/blob/main/public/img/Logo_p_rlace.png?raw=true)
 
 
 The goal is to re create a r/place in our own way.
