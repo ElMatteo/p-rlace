@@ -110,7 +110,8 @@ img.logo {
    border-radius: 5px;
    box-shadow: 3px 3px 3px grey;
    margin: 10px;
-   font-family: "Font Slogan";
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-size: larger;
    
     
 }

@@ -36,8 +36,8 @@ $(document).ready(() => {
       console.log(x, y);
 
       socket.emit("color", {
-          col: x,
-          row: y,
+          col: x+1,
+          row: y+1,
           color: $("#color").val()
       })
   });
