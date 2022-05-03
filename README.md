@@ -9,19 +9,13 @@ The goal is to re create a r/place in our own way.
 
 _Users will be able to place a pixel on a web page._
 
-The pixel can be :
-  * Blue
-  * White
-  * Yellow
-  * Gray
-  * Black
-  * etc...
+The pixel can be any color you want.
 
 _**This page will be on a server then users can battle to create the biggest art on the page.**_
 
 ## Access to the project
 
-You can access our project by [this link](https://prlace.pandore.space/)
+You can access our project by clicking [THIS LINK](https://prlace.pandore.space/)
 
 # Local hosting #
 
@@ -29,10 +23,7 @@ You can access our project by [this link](https://prlace.pandore.space/)
 ```bash
 npm run install
 ```
-_**or**_
-```bash
-npm install
-```
+
 ## How to run ? ##
 ```bash
 npm run start
